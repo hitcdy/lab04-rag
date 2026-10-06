@@ -1,0 +1,56 @@
+{
+ "probe": "云大的校训是什么？",
+ "raw_entities": [],
+ "norm_entities": [
+  "云山大学"
+ ],
+ "raw_docs": [
+  "doc09",
+  "doc11",
+  "doc13",
+  "doc02",
+  "doc04"
+ ],
+ "norm_docs": [
+  "doc01"
+ ],
+ "nodes_raw": 45,
+ "nodes_norm": 45,
+ "nodes_noisy_raw": 48,
+ "nodes_noisy_norm": 45,
+ "degree_noisy_raw": [
+  [
+   "李文瀚",
+   6
+  ],
+  [
+   "人工智能学院",
+   5
+  ],
+  [
+   "大模型通识课",
+   3
+  ]
+ ],
+ "degree_noisy_norm": [
+  [
+   "李文瀚",
+   6
+  ],
+  [
+   "人工智能学院",
+   5
+  ],
+  [
+   "大模型通识课",
+   3
+  ]
+ ],
+ "probe2": "云山大学的校训是什么？",
+ "probe2_raw": [
+  "doc01"
+ ],
+ "probe2_norm": [
+  "doc01"
+ ]
+}

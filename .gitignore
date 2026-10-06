@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+_dump.txt
+_preview.pdf
+_pg*.png

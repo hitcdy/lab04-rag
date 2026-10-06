@@ -1,0 +1,46 @@
+{
+ "doc16": "人工智能学院新进教师：张明远，副教授，2026年入职，研究方向为多模态大模型，主讲新开设的《多模态智能》课程，并担任AI协会的联合指导教师。",
+ "vector": {
+  "rebuild_all": 0.11735725402832031,
+  "encode_new": 0.009154558181762695,
+  "chunks": 16
+ },
+ "graph": {
+  "add_triples": 6,
+  "rebuild": 0.29300427436828613
+ },
+ "wiki": {
+  "reencode": 0.10805678367614746,
+  "entries": 9
+ },
+ "Vector RAG": {
+  "docs": [
+   "doc16",
+   "doc04",
+   "doc05",
+   "doc07",
+   "doc02"
+  ],
+  "doc16_rank": 1
+ },
+ "GraphRAG": {
+  "docs": [
+   "doc16",
+   "doc04",
+   "doc02",
+   "doc07",
+   "doc10"
+  ],
+  "doc16_rank": 1
+ },
+ "WikiRAG": {
+  "docs": [
+   "doc04",
+   "doc11",
+   "doc16",
+   "doc05",
+   "doc07"
+  ],
+  "doc16_rank": 3
+ }
+}

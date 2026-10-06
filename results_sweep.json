@@ -1,0 +1,5085 @@
+{
+ "1": {
+  "k": 1,
+  "tag": "",
+  "n_questions": 15,
+  "systems": {
+   "Vector RAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.36666666666666664,
+      "mrr": 0.8,
+      "full_hit": 0,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.5666666666666667,
+      "mrr": 0.8,
+      "full_hit": 2,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc02",
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [
+       "doc07"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02",
+       "doc03"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.6444444444444444,
+     "mrr": 0.8666666666666667
+    }
+   },
+   "GraphRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.4333333333333333,
+      "mrr": 1.0,
+      "full_hit": 0,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.2,
+      "mrr": 0.2,
+      "full_hit": 1,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc02",
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04",
+       "doc06"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc04"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [
+       "doc07"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [],
+      "miss": [
+       "doc08"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [],
+      "miss": [
+       "doc06",
+       "doc11"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     }
+    },
+    "overall": {
+     "recall": 0.5444444444444444,
+     "mrr": 0.7333333333333333
+    }
+   },
+   "WikiRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 0.6,
+      "mrr": 0.6,
+      "full_hit": 3,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.4333333333333333,
+      "mrr": 1.0,
+      "full_hit": 0,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.3,
+      "mrr": 0.4,
+      "full_hit": 1,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [],
+      "miss": [
+       "doc13"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [],
+      "miss": [
+       "doc12"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc02",
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04",
+       "doc06"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [
+       "doc10"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [
+       "doc07"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [],
+      "miss": [
+       "doc08"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.4444444444444445,
+     "mrr": 0.6666666666666666
+    }
+   },
+   "Hybrid RRF": {
+    "by_type": {
+     "fact": {
+      "recall": 0.6,
+      "mrr": 0.6,
+      "full_hit": 3,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.4333333333333333,
+      "mrr": 1.0,
+      "full_hit": 0,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.4666666666666667,
+      "mrr": 0.6,
+      "full_hit": 2,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc08"
+      ],
+      "hit": [],
+      "miss": [
+       "doc12"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc02",
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc04"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [
+       "doc06",
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [
+       "doc10"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [
+       "doc07"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02",
+       "doc03"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07"
+      ],
+      "hit": [],
+      "miss": [
+       "doc06",
+       "doc11"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     }
+    },
+    "overall": {
+     "recall": 0.5,
+     "mrr": 0.7333333333333333
+    }
+   }
+  }
+ },
+ "2": {
+  "k": 2,
+  "tag": "",
+  "n_questions": 15,
+  "systems": {
+   "Vector RAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.8,
+      "mrr": 0.9,
+      "full_hit": 3,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.7666666666666667,
+      "mrr": 0.9,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc14"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc08"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13",
+       "doc12"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12",
+       "doc06"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc11"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04",
+       "doc06"
+      ],
+      "first_hit_rank": 2,
+      "recall": 0.3333333333333333
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc02"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc01"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02",
+       "doc03"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc15"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc03"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.8555555555555556,
+     "mrr": 0.9333333333333333
+    }
+   },
+   "GraphRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.7666666666666666,
+      "mrr": 1.0,
+      "full_hit": 2,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.4,
+      "mrr": 0.3,
+      "full_hit": 2,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12",
+       "doc06"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc02"
+      ],
+      "hit": [
+       "doc02",
+       "doc06"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc06"
+      ],
+      "hit": [
+       "doc06",
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc02"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc04",
+       "doc07"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc02"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc11"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04"
+      ],
+      "hit": [],
+      "miss": [
+       "doc08"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04"
+      ],
+      "hit": [],
+      "miss": [
+       "doc06",
+       "doc11"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     }
+    },
+    "overall": {
+     "recall": 0.7222222222222222,
+     "mrr": 0.7666666666666667
+    }
+   },
+   "WikiRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 0.8,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.6,
+      "mrr": 1.0,
+      "full_hit": 1,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.5,
+      "mrr": 0.5,
+      "full_hit": 2,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc03"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04",
+       "doc06"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc07"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13"
+      ],
+      "hit": [
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc03"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.7,
+     "mrr": 0.7666666666666667
+    }
+   },
+   "Hybrid RRF": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 0.8,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.7,
+      "mrr": 1.0,
+      "full_hit": 2,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.5666666666666667,
+      "mrr": 0.7,
+      "full_hit": 2,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc14"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc08"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13",
+       "doc12"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc02"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc12"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc04",
+       "doc07"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [
+       "doc06",
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc03"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [
+       "doc10"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc01"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02",
+       "doc03"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc15"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc07"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc03"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 2,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.7555555555555556,
+     "mrr": 0.8333333333333334
+    }
+   }
+  }
+ },
+ "3": {
+  "k": 3,
+  "tag": "",
+  "n_questions": 15,
+  "systems": {
+   "Vector RAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.8666666666666666,
+      "mrr": 0.9,
+      "full_hit": 3,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.7666666666666667,
+      "mrr": 0.9,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc14",
+       "doc09"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc08",
+       "doc15"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13",
+       "doc12",
+       "doc11"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc13"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12",
+       "doc06",
+       "doc14"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc11",
+       "doc06"
+      ],
+      "hit": [
+       "doc06",
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 2,
+      "recall": 0.6666666666666666
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc02",
+       "doc03"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc04",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc04",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc01",
+       "doc04"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02",
+       "doc03"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc15",
+       "doc10"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc07"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc03",
+       "doc12"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc08"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.8777777777777778,
+     "mrr": 0.9333333333333333
+    }
+   },
+   "GraphRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.9333333333333333,
+      "mrr": 1.0,
+      "full_hit": 4,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.5,
+      "mrr": 0.36666666666666664,
+      "full_hit": 2,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc10"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12",
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc02",
+       "doc04"
+      ],
+      "hit": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc06",
+       "doc02"
+      ],
+      "hit": [
+       "doc06",
+       "doc11"
+      ],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc02",
+       "doc04"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc04",
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc02",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc11",
+       "doc13"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc10"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "hit": [],
+      "miss": [
+       "doc08"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 3,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.8111111111111111,
+     "mrr": 0.788888888888889
+    }
+   },
+   "WikiRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 0.8,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.8666666666666666,
+      "mrr": 1.0,
+      "full_hit": 3,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.6,
+      "mrr": 0.5,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12",
+       "doc14"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc03",
+       "doc10"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13",
+       "doc05"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc15"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12",
+       "doc14"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc11"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [
+       "doc06"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc15"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc08",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13",
+       "doc04"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12",
+       "doc14"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc03",
+       "doc10"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc15"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc08",
+       "doc06"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc11"
+      ],
+      "hit": [
+       "doc06",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     }
+    },
+    "overall": {
+     "recall": 0.8222222222222223,
+     "mrr": 0.7666666666666667
+    }
+   },
+   "Hybrid RRF": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 0.8,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.8666666666666666,
+      "mrr": 1.0,
+      "full_hit": 3,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.7666666666666667,
+      "mrr": 0.7666666666666667,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc14",
+       "doc10"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc08",
+       "doc15"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13",
+       "doc12",
+       "doc11"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc02",
+       "doc10"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc12",
+       "doc06"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc07"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc04",
+       "doc07",
+       "doc06"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc04",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc04",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc01",
+       "doc04"
+      ],
+      "hit": [
+       "doc10"
+      ],
+      "miss": [
+       "doc02",
+       "doc03"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.3333333333333333
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc15",
+       "doc11"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc07",
+       "doc04"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 3,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc03",
+       "doc06"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc06",
+       "doc04"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 2,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.8777777777777778,
+     "mrr": 0.8555555555555556
+    }
+   }
+  }
+ },
+ "5": {
+  "k": 5,
+  "tag": "",
+  "n_questions": 15,
+  "systems": {
+   "Vector RAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 1.0,
+      "mrr": 0.9,
+      "full_hit": 5,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.9333333333333333,
+      "mrr": 0.9,
+      "full_hit": 4,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc14",
+       "doc09",
+       "doc06",
+       "doc10"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc08",
+       "doc15",
+       "doc03",
+       "doc12"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13",
+       "doc12",
+       "doc11",
+       "doc14",
+       "doc08"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc13",
+       "doc03",
+       "doc15"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12",
+       "doc06",
+       "doc14",
+       "doc09",
+       "doc07"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc05",
+       "doc02",
+       "doc07"
+      ],
+      "hit": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc11",
+       "doc06",
+       "doc04",
+       "doc02"
+      ],
+      "hit": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc02",
+       "doc03",
+       "doc07",
+       "doc01"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc04",
+       "doc05",
+       "doc08",
+       "doc06"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc04",
+       "doc05",
+       "doc02",
+       "doc07"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc01",
+       "doc04",
+       "doc03",
+       "doc05"
+      ],
+      "hit": [
+       "doc03",
+       "doc10"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc15",
+       "doc10",
+       "doc12",
+       "doc03"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc07",
+       "doc11",
+       "doc10"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc03",
+       "doc12",
+       "doc06",
+       "doc09"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc08",
+       "doc11",
+       "doc15"
+      ],
+      "hit": [
+       "doc06",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     }
+    },
+    "overall": {
+     "recall": 0.9777777777777777,
+     "mrr": 0.9333333333333333
+    }
+   },
+   "GraphRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hit": 5,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.7,
+      "mrr": 0.4066666666666666,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc10",
+       "doc11",
+       "doc07"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc12",
+       "doc06",
+       "doc04",
+       "doc11"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc02",
+       "doc04",
+       "doc11",
+       "doc10"
+      ],
+      "hit": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc06",
+       "doc02",
+       "doc04",
+       "doc10"
+      ],
+      "hit": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc02",
+       "doc04",
+       "doc07",
+       "doc11"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc04",
+       "doc07",
+       "doc08",
+       "doc10",
+       "doc02"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc02",
+       "doc04",
+       "doc10"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc11",
+       "doc13",
+       "doc02",
+       "doc03"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc10",
+       "doc11",
+       "doc07"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc06",
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 5,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc04",
+       "doc06",
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 3,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.9,
+     "mrr": 0.8022222222222222
+    }
+   },
+   "WikiRAG": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 0.8,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.8666666666666666,
+      "mrr": 1.0,
+      "full_hit": 3,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.6,
+      "mrr": 0.5,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12",
+       "doc14",
+       "doc09",
+       "doc06"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc03",
+       "doc10",
+       "doc11",
+       "doc13"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13",
+       "doc05",
+       "doc01",
+       "doc12"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc15",
+       "doc03",
+       "doc11"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12",
+       "doc14",
+       "doc09",
+       "doc06"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc11",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13",
+       "doc04",
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [
+       "doc06"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc15",
+       "doc03",
+       "doc07"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc08",
+       "doc04",
+       "doc11",
+       "doc05"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc13",
+       "doc04",
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc12",
+       "doc14",
+       "doc04",
+       "doc11"
+      ],
+      "hit": [],
+      "miss": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc03",
+       "doc10",
+       "doc02",
+       "doc15"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc10",
+       "doc15",
+       "doc11",
+       "doc13"
+      ],
+      "hit": [],
+      "miss": [
+       "doc04"
+      ],
+      "first_hit_rank": 0,
+      "recall": 0.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc08",
+       "doc06",
+       "doc09"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc11",
+       "doc07",
+       "doc08"
+      ],
+      "hit": [
+       "doc06",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     }
+    },
+    "overall": {
+     "recall": 0.8222222222222223,
+     "mrr": 0.7666666666666667
+    }
+   },
+   "Hybrid RRF": {
+    "by_type": {
+     "fact": {
+      "recall": 1.0,
+      "mrr": 0.8,
+      "full_hit": 5,
+      "n": 5
+     },
+     "multi": {
+      "recall": 0.9333333333333333,
+      "mrr": 1.0,
+      "full_hit": 4,
+      "n": 5
+     },
+     "global": {
+      "recall": 0.8333333333333334,
+      "mrr": 0.7666666666666667,
+      "full_hit": 3,
+      "n": 5
+     }
+    },
+    "per_question": {
+     "Q06": {
+      "type": "fact",
+      "query": "云山大学的校训是什么？",
+      "evidence": [
+       "doc01"
+      ],
+      "retrieved": [
+       "doc01",
+       "doc14",
+       "doc10",
+       "doc09",
+       "doc15"
+      ],
+      "hit": [
+       "doc01"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q07": {
+      "type": "fact",
+      "query": "国家奖学金的金额是多少？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc08",
+       "doc15",
+       "doc03",
+       "doc12"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q08": {
+      "type": "fact",
+      "query": "图书馆每天几点到几点开放？",
+      "evidence": [
+       "doc13"
+      ],
+      "retrieved": [
+       "doc13",
+       "doc12",
+       "doc11",
+       "doc14",
+       "doc08"
+      ],
+      "hit": [
+       "doc13"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q09": {
+      "type": "fact",
+      "query": "人工智能学院成立于哪一年？",
+      "evidence": [
+       "doc02"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc02",
+       "doc10",
+       "doc13",
+       "doc15"
+      ],
+      "hit": [
+       "doc02"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q10": {
+      "type": "fact",
+      "query": "春季学期什么时候开学？",
+      "evidence": [
+       "doc12"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc12",
+       "doc06",
+       "doc14",
+       "doc07"
+      ],
+      "hit": [
+       "doc12"
+      ],
+      "miss": [],
+      "first_hit_rank": 2,
+      "recall": 1.0
+     },
+     "Q01": {
+      "type": "multi",
+      "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+       "doc02",
+       "doc04",
+       "doc06"
+      ],
+      "retrieved": [
+       "doc06",
+       "doc04",
+       "doc07",
+       "doc05",
+       "doc08"
+      ],
+      "hit": [
+       "doc04",
+       "doc06"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q02": {
+      "type": "multi",
+      "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc04",
+       "doc07",
+       "doc06",
+       "doc11",
+       "doc02"
+      ],
+      "hit": [
+       "doc04",
+       "doc06",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q03": {
+      "type": "multi",
+      "query": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+       "doc02",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc03",
+       "doc10",
+       "doc07",
+       "doc01"
+      ],
+      "hit": [
+       "doc02",
+       "doc10"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q04": {
+      "type": "multi",
+      "query": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc07"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc04",
+       "doc05",
+       "doc08",
+       "doc06"
+      ],
+      "hit": [
+       "doc04",
+       "doc07"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q05": {
+      "type": "multi",
+      "query": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+       "doc04",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc11",
+       "doc04",
+       "doc05",
+       "doc02",
+       "doc07"
+      ],
+      "hit": [
+       "doc04",
+       "doc11"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q11": {
+      "type": "global",
+      "query": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+       "doc02",
+       "doc03",
+       "doc10"
+      ],
+      "retrieved": [
+       "doc10",
+       "doc01",
+       "doc04",
+       "doc15",
+       "doc03"
+      ],
+      "hit": [
+       "doc03",
+       "doc10"
+      ],
+      "miss": [
+       "doc02"
+      ],
+      "first_hit_rank": 1,
+      "recall": 0.6666666666666666
+     },
+     "Q12": {
+      "type": "global",
+      "query": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+       "doc09"
+      ],
+      "retrieved": [
+       "doc09",
+       "doc15",
+       "doc11",
+       "doc10",
+       "doc12"
+      ],
+      "hit": [
+       "doc09"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q13": {
+      "type": "global",
+      "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+       "doc04"
+      ],
+      "retrieved": [
+       "doc02",
+       "doc07",
+       "doc04",
+       "doc05",
+       "doc11"
+      ],
+      "hit": [
+       "doc04"
+      ],
+      "miss": [],
+      "first_hit_rank": 3,
+      "recall": 1.0
+     },
+     "Q14": {
+      "type": "global",
+      "query": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+       "doc08"
+      ],
+      "retrieved": [
+       "doc08",
+       "doc03",
+       "doc06",
+       "doc12",
+       "doc01"
+      ],
+      "hit": [
+       "doc08"
+      ],
+      "miss": [],
+      "first_hit_rank": 1,
+      "recall": 1.0
+     },
+     "Q15": {
+      "type": "global",
+      "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+       "doc06",
+       "doc11"
+      ],
+      "retrieved": [
+       "doc07",
+       "doc06",
+       "doc04",
+       "doc08",
+       "doc13"
+      ],
+      "hit": [
+       "doc06"
+      ],
+      "miss": [
+       "doc11"
+      ],
+      "first_hit_rank": 2,
+      "recall": 0.5
+     }
+    },
+    "overall": {
+     "recall": 0.9222222222222223,
+     "mrr": 0.8555555555555556
+    }
+   }
+  }
+ }
+}

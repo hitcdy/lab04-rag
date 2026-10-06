@@ -1,0 +1,389 @@
+[
+ {
+  "system": "Vector RAG",
+  "qid": "Q11",
+  "type": "global",
+  "query": "云山大学有哪些科研平台？分别依托谁建设？",
+  "miss": [
+   "doc02"
+  ],
+  "detail": [
+   "doc02(排第10)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc10",
+   "doc01",
+   "doc04",
+   "doc03",
+   "doc05"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "Vector RAG",
+  "qid": "Q17",
+  "type": "multi",
+  "query": "秋季学期开设课程的授课教师，所在学院的院长是谁？",
+  "miss": [
+   "doc02",
+   "doc04"
+  ],
+  "detail": [
+   "doc02(排第6)",
+   "doc04(排第7)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc05",
+   "doc03",
+   "doc12",
+   "doc07",
+   "doc06"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "Vector RAG",
+  "qid": "Q20",
+  "type": "global",
+  "query": "学校在人工智能领域的教学、科研与对外合作分别有哪些安排？",
+  "miss": [
+   "doc06"
+  ],
+  "detail": [
+   "doc06(排第10)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc02",
+   "doc15",
+   "doc04",
+   "doc11",
+   "doc10"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "GraphRAG",
+  "qid": "Q11",
+  "type": "global",
+  "query": "云山大学有哪些科研平台？分别依托谁建设？",
+  "miss": [
+   "doc02",
+   "doc03",
+   "doc10"
+  ],
+  "detail": [
+   "doc02(未进入候选集)",
+   "doc03(未进入候选集)",
+   "doc10(未进入候选集)"
+  ],
+  "kind": "根本没检到",
+  "retrieved": [
+   "doc01"
+  ],
+  "candidate_size": 1
+ },
+ {
+  "system": "GraphRAG",
+  "qid": "Q15",
+  "type": "global",
+  "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+  "miss": [
+   "doc11"
+  ],
+  "detail": [
+   "doc11(排第7)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc02",
+   "doc04",
+   "doc06",
+   "doc07",
+   "doc08"
+  ],
+  "candidate_size": 8
+ },
+ {
+  "system": "GraphRAG",
+  "qid": "Q20",
+  "type": "global",
+  "query": "学校在人工智能领域的教学、科研与对外合作分别有哪些安排？",
+  "miss": [
+   "doc06"
+  ],
+  "detail": [
+   "doc06(排第6)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc02",
+   "doc03",
+   "doc10",
+   "doc15",
+   "doc04"
+  ],
+  "candidate_size": 8
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q01",
+  "type": "multi",
+  "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+  "miss": [
+   "doc02"
+  ],
+  "detail": [
+   "doc02(未进入候选集)"
+  ],
+  "kind": "根本没检到",
+  "retrieved": [
+   "doc06",
+   "doc04",
+   "doc11",
+   "doc05"
+  ],
+  "candidate_size": 4
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q02",
+  "type": "multi",
+  "query": "AI协会的指导教师主讲课程的课程代码是什么？",
+  "miss": [
+   "doc06"
+  ],
+  "detail": [
+   "doc06(未进入候选集)"
+  ],
+  "kind": "根本没检到",
+  "retrieved": [
+   "doc11",
+   "doc13",
+   "doc04",
+   "doc07",
+   "doc08"
+  ],
+  "candidate_size": 5
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q11",
+  "type": "global",
+  "query": "云山大学有哪些科研平台？分别依托谁建设？",
+  "miss": [
+   "doc02",
+   "doc03",
+   "doc10"
+  ],
+  "detail": [
+   "doc02(未进入候选集)",
+   "doc03(未进入候选集)",
+   "doc10(未进入候选集)"
+  ],
+  "kind": "根本没检到",
+  "retrieved": [
+   "doc01",
+   "doc12",
+   "doc14",
+   "doc04",
+   "doc11"
+  ],
+  "candidate_size": 6
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q13",
+  "type": "global",
+  "query": "人工智能学院有哪些教师？各自做什么研究方向？",
+  "miss": [
+   "doc04"
+  ],
+  "detail": [
+   "doc04(排第6)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc02",
+   "doc10",
+   "doc15",
+   "doc11",
+   "doc13"
+  ],
+  "candidate_size": 6
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q17",
+  "type": "multi",
+  "query": "秋季学期开设课程的授课教师，所在学院的院长是谁？",
+  "miss": [
+   "doc02",
+   "doc04"
+  ],
+  "detail": [
+   "doc02(未进入候选集)",
+   "doc04(未进入候选集)"
+  ],
+  "kind": "根本没检到",
+  "retrieved": [
+   "doc05",
+   "doc03",
+   "doc10",
+   "doc07",
+   "doc08"
+  ],
+  "candidate_size": 5
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q19",
+  "type": "global",
+  "query": "人工智能学院的教师分别指导哪些学生社团？",
+  "miss": [
+   "doc04"
+  ],
+  "detail": [
+   "doc04(排第6)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc11",
+   "doc13",
+   "doc02",
+   "doc10",
+   "doc15"
+  ],
+  "candidate_size": 6
+ },
+ {
+  "system": "WikiRAG",
+  "qid": "Q20",
+  "type": "global",
+  "query": "学校在人工智能领域的教学、科研与对外合作分别有哪些安排？",
+  "miss": [
+   "doc06"
+  ],
+  "detail": [
+   "doc06(未进入候选集)"
+  ],
+  "kind": "根本没检到",
+  "retrieved": [
+   "doc02",
+   "doc10",
+   "doc15",
+   "doc11",
+   "doc13"
+  ],
+  "candidate_size": 6
+ },
+ {
+  "system": "Hybrid RRF",
+  "qid": "Q01",
+  "type": "multi",
+  "query": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+  "miss": [
+   "doc02"
+  ],
+  "detail": [
+   "doc02(排第6)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc06",
+   "doc04",
+   "doc07",
+   "doc05",
+   "doc08"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "Hybrid RRF",
+  "qid": "Q11",
+  "type": "global",
+  "query": "云山大学有哪些科研平台？分别依托谁建设？",
+  "miss": [
+   "doc02"
+  ],
+  "detail": [
+   "doc02(排第10)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc10",
+   "doc01",
+   "doc04",
+   "doc15",
+   "doc03"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "Hybrid RRF",
+  "qid": "Q15",
+  "type": "global",
+  "query": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+  "miss": [
+   "doc11"
+  ],
+  "detail": [
+   "doc11(排第6)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc07",
+   "doc06",
+   "doc04",
+   "doc08",
+   "doc13"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "Hybrid RRF",
+  "qid": "Q17",
+  "type": "multi",
+  "query": "秋季学期开设课程的授课教师，所在学院的院长是谁？",
+  "miss": [
+   "doc02",
+   "doc04"
+  ],
+  "detail": [
+   "doc02(排第7)",
+   "doc04(排第8)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc10",
+   "doc05",
+   "doc07",
+   "doc03",
+   "doc06"
+  ],
+  "candidate_size": 15
+ },
+ {
+  "system": "Hybrid RRF",
+  "qid": "Q20",
+  "type": "global",
+  "query": "学校在人工智能领域的教学、科研与对外合作分别有哪些安排？",
+  "miss": [
+   "doc06"
+  ],
+  "detail": [
+   "doc06(排第10)"
+  ],
+  "kind": "检到但排太后",
+  "retrieved": [
+   "doc02",
+   "doc15",
+   "doc10",
+   "doc04",
+   "doc07"
+  ],
+  "candidate_size": 15
+ }
+]
